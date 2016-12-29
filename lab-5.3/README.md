@@ -27,6 +27,9 @@ Check out the POM file using `less`. Type space to scroll down, b to scroll up a
 
 `less pom.xml`  
 
+Check out the Java code.  
+`cat src/main/java/camel/FileCopier.java`  
+
 Build the code.
 
 `~/maven/bin/mvn package`  
