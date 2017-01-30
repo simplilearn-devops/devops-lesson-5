@@ -32,7 +32,7 @@ Check out the Java code.
 
 Build the code.
 
-`~/maven/bin/mvn package`  
+`mvn package`  
 
 See what got created.  
 `find .`  
@@ -43,7 +43,7 @@ jar tf target/camel.jar
 ### Step 4
 
 Use Maven to copy dependency jars.  
-`~/maven/bin/mvn dependency:copy-dependencies`  
+`mvn dependency:copy-dependencies`  
 
 See what got copied.  
 `find target`  
@@ -104,6 +104,6 @@ should see that the files get copied and moved.
 
 Tidy up.  
 `docker rm -f camel`  
-`~/maven/bin/mvn clean`  
+`mvn clean`  
 
 
