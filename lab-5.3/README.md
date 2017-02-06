@@ -38,7 +38,7 @@ See what got created.
 `find .`  
 
 Take a look inside the jar file.  
-jar tf target/camel.jar
+`jar tf target/camel.jar`
 
 ### Step 4
 
@@ -85,7 +85,7 @@ Build the image.
 `docker build -t camel .`  
 `docker images`  
 
-### Step 7
+### Step 8
 
 We can now run the docker container.  
 `docker run -d --name camel -v $PWD/data:/opt/data camel`  
@@ -100,7 +100,7 @@ should see that the files get copied and moved.
 `echo "Message 4" > data/input/message4.txt`  
 `find data`  
 
-### Step 8
+### Step 9
 
 Tidy up.  
 `docker rm -f camel`  
